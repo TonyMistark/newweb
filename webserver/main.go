@@ -11,7 +11,7 @@ func firstPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fmt.Println("Start Server...")
+    fmt.Println("Start Server 0.0.0.0:8989...")
     http.HandleFunc("/", firstPage)
     http.ListenAndServe(":8989", nil)
 }

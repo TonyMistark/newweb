@@ -23,7 +23,7 @@ func firstPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fmt.Println("Start deploy server...")
+    fmt.Println("Start deploy server 0.0.0.0:8988...")
     http.HandleFunc("/", firstPage)
     http.ListenAndServe(":8988", nil)
 }
